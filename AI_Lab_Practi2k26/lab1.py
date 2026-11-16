@@ -3,7 +3,7 @@
 room_A = input('Enter status of room A (Dirty/Clean): ').lower()
 room_B = input('Enter status of room B (Dirty/Clean): ').lower()
 
-#Initial Position of qa Vaccum Cleaner
+#Initial Position of a Vaccum Cleaner
 position = "A"
 
 print("\nVaccum cleaner started")
@@ -13,7 +13,7 @@ while True:
     if position == "A":
         if room_A == "Dirty":
             print("Room A is Dirty --> Cleaning Room A, please wait")
-            room_A == "Clean"
+            room_A = "Clean"
         else:
             print("Room A is Clean --> Move to Room B")
             position == "B"
@@ -21,7 +21,7 @@ while True:
     elif position == "B":
         if room_B == "Dirty":
             print("Room B is Dirty --> Cleaning Room B, please wait")
-            room_B == "Clean"
+            room_B = "Clean"
         else:
             print("Room B is Clean --> Task is Completed")
             break
